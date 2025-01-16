@@ -216,9 +216,8 @@ class _TablaRegistrosState extends State<TablaRegistros> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     IconButton(
-                                      color: Colors.white,
                                       icon:
-                                          Icon(Icons.edit, color: Colors.blue),
+                                          Icon(Icons.edit, color: Colors.green),
                                       onPressed: () async {
                                         // Mapa que asocia cada entidad con su formulario correspondiente
                                         final formularios = {
