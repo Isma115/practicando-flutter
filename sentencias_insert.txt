@@ -1,0 +1,25 @@
+INSERT INTO autores (nombre_apellidos, nacionalidad, fecha_nacimiento)
+VALUES 
+('Gabriel García Márquez', 'Colombiana', '1927-03-06'),
+('Jane Austen', 'Británica', '1775-12-16'),
+('George Orwell', 'Británica', '1903-06-25');
+
+INSERT INTO libros (titulo, id_autor, anio_publicacion, genero, disponible)
+VALUES 
+('Cien años de soledad', 1, 1967, 'Realismo mágico', TRUE),
+('Orgullo y prejuicio', 2, 1813, 'Romántico', TRUE),
+('1984', 3, 1949, 'Distopía', TRUE);
+
+INSERT INTO usuarios (nombre, email, telefono)
+VALUES 
+('Juan Pérez', 'juan.perez@example.com', '555-1234'),
+('Ana García', 'ana.garcia@example.com', '555-5678'),
+('Carlos López', 'carlos.lopez@example.com', '555-9101');
+
+INSERT INTO prestamos (id_usuario, id_libro, fecha_prestamo, fecha_devolucion, fecha_devolucion_real, estado)
+VALUES 
+(1, 1, '2025-01-01', '2025-01-15', NULL, 'pendiente'),
+(2, 2, '2025-01-05', '2025-01-20', '2025-01-18', 'devuelto'),
+(3, 3, '2025-01-10', '2025-01-25', NULL, 'pendiente');
+Error Code: 1292. Incorrect date value: '2008' for column 'fecha_registro' at row 3
+Error Code: 1292. Incorrect date value: '2008' for column 'fecha_registro' at row 3
